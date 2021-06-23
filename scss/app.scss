@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'moncerat';
+    src: url(../font/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+body{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    button{
+        border-radius: 71px;
+        border: none;
+        outline: none;
+        background-color:#F86B6B;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-family: 'moncerat';
+        font-weight: 700;
+        overflow: hidden;
+        .title{
+            padding: 22px 0;
+            color:#fff;
+            width:0;
+            transform: translateX(-200px);
+            transition:
+                padding .5s,
+                width .5s,
+                transform .5s;
+            font-size: 22px;
+            
+        }
+        .img{
+            background-image: url(../img/next.svg);
+            background-size: cover;
+            width: 71px;
+            height: 71px;
+            transform: rotate(-90deg);
+            transition: transform .5s;
+        }
+        &:hover{
+            border: none;
+            outline: none;
+            .img{
+                transform:
+                    rotate(0);
+            }
+            .title{
+                transform: translateX(0);
+                width:128px;
+                padding-left: 50px;
+                padding-right: -6px;
+                
+            }
+        }
+        &:focus{
+            border: none;
+            outline: none;
+            .img{
+                transform: rotate(0);
+            }
+        }
+        &:active{
+            border: none;
+            outline: none;
+            .img{
+                transform: rotate(0);
+            }
+        }
+    }
+}
