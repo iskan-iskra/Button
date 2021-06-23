@@ -1,6 +1,7 @@
-# Button
+# Button  
+![DEMO](/demo.jpg)  
 Task from IT-STEP  
-Practice:  
+Practice:
 - CSS Pseudo-class
 - CSS transition
 - CSS transform  
